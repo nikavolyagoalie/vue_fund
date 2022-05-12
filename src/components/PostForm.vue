@@ -47,6 +47,15 @@ export default {
       this.post.body = e.target.value;
     },
   },
+
+//   watch: {
+//       post: {
+//           handler(bb) {
+//               console.log(bb)
+//           },
+//           deep: true
+//       }
+//   }
 };
 </script>
 
