@@ -3,6 +3,8 @@
         <div @click="$router.push('/')" style="cursor: pointer">My App</div>
         <div class="navbar__btns">
             <my-button @click="$router.push('/posts')">My Posts</my-button>
+            <my-button @click="$router.push('/store')">My PostsStore</my-button>
+            <my-button @click="$router.push('/composition')">My PostsCompositionAPI</my-button>
         </div>
     </div>
 </template>

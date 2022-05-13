@@ -1,9 +1,9 @@
 import { createApp } from 'vue'
-import App from './App'
+import App from '@/App'
 //импорт UI-компонентов
 import components from '@/components/UI'
-import router from './components/router/router';
-import VIntersection from '@/directives/VIntersection';
+import router from '@/components/router/router';
+import store from '@/store'
 import directives from '@/directives';
 
 const app = createApp(App)
@@ -21,4 +21,5 @@ directives.forEach(directive => {
 //все библиотеки, плагигны и т.д. подключаются через use
 app
     .use(router)
+    .use(store)
     .mount('#app')
